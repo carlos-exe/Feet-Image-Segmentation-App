@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">Feet_Mamitas-App</string>
+    <string name="app_name">Feet Segmentation</string>
     <string name="description_text">Upload an image that you want to see the inference of the model.</string>
     <string name="load_image_button">Load Image</string>
     <string name="image_description">Image to be analyzed by the model</string>
     <string name="goodimage">goodimage</string>
+    <string name="capturar_imagen_t_rmica">Capturar imagen térmica</string>
+    <string name="Mini_logo">Mini_Logo</string>
+    <string name="Title">Feet Segmentation</string>
+    <string name="Escudo">Unal_logo</string>
 </resources>
