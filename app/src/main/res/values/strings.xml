@@ -8,4 +8,7 @@
     <string name="Mini_logo">Mini_Logo</string>
     <string name="Title">Feet Segmentation</string>
     <string name="Escudo">Unal_logo</string>
+    <string name="GCPDS">GCPDS</string>
+    <string name="GCPDS1">Grupo de Control y</string>
+    <string name="GCPDS2">Procesamiento Digital de Señales</string>
 </resources>
