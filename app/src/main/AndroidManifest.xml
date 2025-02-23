@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.carlos_ordonez.feet_mamitas">
 
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logofinal"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -25,5 +30,9 @@
             </intent-filter>
         </activity>
     </application>
+
+    <queries>
+        <package android:name="com.fluke.erlang" />
+    </queries>
 
 </manifest>

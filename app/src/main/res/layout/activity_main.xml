@@ -1,43 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#4d998c">
 
-    <!-- Imagen con margen superior -->
+    <!-- Contenedor principal con el contenido en vertical -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <!-- Texto con margen superior y separación del botón -->
+        <!-- Encabezado con logo y título -->
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            tools:ignore="UseCompoundDrawables">
 
+            <ImageView
+                android:id="@+id/headerLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/Mini_logo"
+                android:src="@mipmap/logofinal"/>
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Imagen principal a mostrar -->
+        <ImageView
+            android:id="@+id/imageToLoad"
+            android:layout_width="match_parent"
+            android:layout_height="482dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/image_description"
+            android:importantForAccessibility="no"
+            android:src="@mipmap/logofinal" />
+
+        <!-- Botón para cargar imagen desde la galería -->
+        <Button
+            android:id="@+id/loadImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:text="@string/load_image_button"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botón para abrir la aplicación Fluke iSee -->
+        <Button
+            android:id="@+id/captureThermalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:text="@string/capturar_imagen_t_rmica"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Imagen pequeña en la esquina inferior izquierda -->
     <ImageView
-        android:id="@+id/imageToLoad"
-        android:layout_width="match_parent"
-        android:layout_height="482dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@null"
-        android:importantForAccessibility="no"
-        android:src="@drawable/goodimage" />
-
-    <TextView
-        android:id="@+id/descriptionText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="@string/description_text"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
-
-    <!-- Botón con separación del borde inferior -->
-    <Button
-        android:id="@+id/loadImageButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:maxWidth="320dp"
-        android:text="@string/load_image_button" />
-</LinearLayout>
+        android:id="@+id/bottomLeftImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/Escudo"
+        android:src="@drawable/escudo" />
+</FrameLayout>
