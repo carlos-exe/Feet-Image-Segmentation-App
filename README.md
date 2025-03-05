@@ -14,6 +14,10 @@ This repository contains the source code for the "Feet Segmentation" Android app
 - Fluke iSee app installed (for thermal capture functionality)
 - TensorFlow Lite support library
 
+## Instructions to use another model
+- Open app/src/main/ml and load your tflite model here
+- Open app/src/main/java/com/carlos_ordonez/feet_mamitas/MainActivity.kt and replace in line 152, on the function "loadModelFile", "model.tflite" for the name of your model.
+
 ## Setup Instructions
 1. Clone the repository:
    ```bash
