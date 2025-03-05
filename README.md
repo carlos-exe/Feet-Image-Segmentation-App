@@ -1,7 +1,7 @@
 # Feet Segmentation Android App
 
 ## Overview
-This repository contains the source code for the "Feet Segmentation" Android application, developed using Kotlin and TensorFlow Lite. The app performs real-time semantic segmentation of thermal foot images, leveraging a pre-trained U-Net model enhanced with Convolutional Random Fourier Feature (ConvRFF) layers. It offers two inference options: loading images from the gallery or capturing thermal images via the Fluke iSee app. The project is part of a broader research effort to improve medical diagnostics through mobile technology, specifically targeting foot ulcer detection.
+This repository contains the source code for the "Feet Image Segmentation" Android application, developed using Kotlin and TensorFlow Lite. The app performs real-time semantic segmentation of thermal foot images, leveraging a pre-trained U-Net model enhanced with Convolutional Random Fourier Feature (ConvRFF) layers. It offers two inference options: loading images from the gallery or capturing thermal images via the Fluke iSee app. The project is part of a broader research effort to improve medical diagnostics through mobile technology, specifically targeting foot ulcer detection. You can find the jupyter notebook in the folder Notebooks on Feet-Mamitas-App/Notebooks.
 
 ## Features
 - **Gallery Image Segmentation**: Select and segment existing images from the device.
